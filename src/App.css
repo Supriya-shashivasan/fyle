@@ -1,22 +1,121 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #212121;
+    font-size: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
+body {
+    margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+code, a {
+    color: #FC427B;
+    font-style: italic;
 }
 
-.App-link {
-  color: #09d3ac;
+h1 {
+    font-size: 3em;
+    color: #212121;
+    margin: 15px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #212121;
+}
+
+p {
+    color: #666666;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 1px solid #FC427B;
+}
+li{
+    list-style-type: none;
+
+}
+.main{
+    max-width:1500px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content: center;
+    background-color: white;
+    padding: 50px;
+}
+.data{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin:15px;
+    
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1px;
+    background-color: #74b9ff;
+    border-radius: 5px;
+    
+}
+.ifsc , .bname{
+    width:15%; 
+    padding: 10px;
+    border-right: 1px solid white;
+     
+}
+.address{
+    list-style-type: none;
+    width:70%;
+    padding: 10px;
+           
+}
+.fill{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin:15px;
+}
+.pagination{
+    display: flex;
+    margin:15px;    
+    justify-content:flex-start;
+    flex-wrap: wrap;
+}
+.page{
+    padding: 5px;    
+    border: 1px solid #74b9ff;
+}
+#city, #page{
+    width: 15%;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #636e72;
+    color: white;
+}
+#search{
+    width: 30%;
+    margin-right:10px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #636e72;
+}
+button{
+    width: 15%;
+    border-radius: 5px;
+    padding: 10px;
+    border-radius: 5px;    
+    background-color: #636e72;
+    color: white
 }

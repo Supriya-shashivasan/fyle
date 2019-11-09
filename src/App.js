@@ -1,25 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { render } from 'react-dom';
+import request from 'axios';
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import './App.css';
+
+import Main from './components/main'
+import Bank from './components/bank'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     <Router>
+                <div>
+                    <Route exact path="/bank/:id" component={Bank} />
+                    <Route exact path="/" component={Main} />
+                    
+                </div>
+            </Router>
   );
 }
 
