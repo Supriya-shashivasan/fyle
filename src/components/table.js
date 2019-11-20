@@ -28,7 +28,7 @@ class Table extends Component {
 
     addToFav(e, bank){
         console.log(e.target)
-        var banks = JSON.parse(localStorage.getItem("banks") || []);
+        var banks = JSON.parse(localStorage.getItem("banks") || "[]");
         var filtered=banks.filter(function (row) {
             return row.ifsc==bank.ifsc
         })
