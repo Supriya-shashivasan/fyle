@@ -20,7 +20,7 @@ class Table extends Component {
     }
 
     componentDidMount() {
-        var list = JSON.parse(localStorage.getItem("banks") || []).map(bank => bank.ifsc)
+        var list = JSON.parse(localStorage.getItem("banks") || "[]").map(bank => bank.ifsc)
         this.setState({
             favList:list
         })
