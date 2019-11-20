@@ -67,6 +67,7 @@ class Main extends Component {
         this.setState({
             currentPage: Number(event.target.id)
         });
+
     }
 
     handleChange(event) {
@@ -143,6 +144,7 @@ class Main extends Component {
                     </select>
                     <input type="text" value={this.state.searchText} id="search" placeholder="search here" onChange={this.handleInputChange} />
                     {/* <button onClick={this.search}>Submit</button> */}
+                    <Link id="favorites" to="/favorites"> My Favorite Banks</Link>
                 </div>
                 <Table banks={this.state.list} perPage={this.state.perPage} currentPage={this.state.currentPage} />
                 <span className="pagination">

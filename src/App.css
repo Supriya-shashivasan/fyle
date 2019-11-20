@@ -75,9 +75,15 @@ li{
 }
 .address{
     list-style-type: none;
-    width:70%;
+    width:60%;
     padding: 10px;
            
+}
+.fav{
+    width: 10%;
+    padding: 10px;
+    border-right: 1px solid white;
+    
 }
 .fill{
     display: flex;
@@ -105,11 +111,18 @@ li{
     color: white;
 }
 #search{
-    width: 30%;
+    width: 50%;
     margin-right:10px;
     border-radius: 5px;
     padding: 10px;
     border: 1px solid #636e72;
+}
+#favorites{
+    /* width: 10%; */
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #636e72;
+    color: white;
 }
 button{
     width: 15%;

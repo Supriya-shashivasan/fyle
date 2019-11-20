@@ -3,7 +3,6 @@ import { render } from 'react-dom';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import request from 'axios';
 
-// import '../app.css'
 import '../App.css'
 
 

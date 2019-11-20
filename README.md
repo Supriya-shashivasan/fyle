@@ -21,4 +21,10 @@ To run the development build, run `npm start`.
 
 The application is built using `create react app`
 
+##My favorite banks feature
 
+### updated on 20/11/2019
+
+The application includes a feature to add a few banks as favorites. 
+For the sake of showing the functionality, this feature uses localstorage.
+A more efficient way would be to use the API to store favorites seperately. As the API provided does not have this facility, I have used localstorage.
